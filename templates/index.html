@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Cadavre Exquis{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>Cadavre Exquis</h1>
+  <p class="important">
+     Un Algoritmo Umano. </p>
+
+  <p> <strong> Istruzioni.</strong>
+          Leggi il seguente frammento e continua la storia!</p>
+  <p>
+
+      <div class=snippet>
+          {{first}} <span class="redText"> [...] </span>{{second}} 
+        </div>
+<form id="package_form" action="" method="POST">
+    <textarea class="form-control" name="content" placeholder="Inserisci una frase, col punto."></textarea>
+    <input type="submit"  name="action" value="Invia">
+    <div>
+    <input type="submit" name="action" value="Leggi tutto">
+    </div>
+</form> 
+{% endblock %}
+  
+
+
