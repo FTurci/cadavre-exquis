@@ -46,7 +46,11 @@ def my_form(text=None):
     first = sel.content
     sel=db.session.query(Phrase).filter(Phrase.num==r+1).first()
     second = sel.content
-    #phrase = firssecond
+    if r != 1:
+        first = "(...) "+first
+    if r+1 != num:
+        second = second+f"(...)"
+    
     if text==None:
         return render_template("index.html",first=first, second=second)
     else:
@@ -68,7 +72,7 @@ def interact():
             db.session.add(p)
             db.session.commit()
 
-        return my_form()
+        return render_template("thanks.html")
 
     elif request.form['action']=='Leggi tutto':
         print("Reading")
@@ -76,9 +80,11 @@ def interact():
         cadavre = " ".join(text)
         print(cadavre)
 
-        return my_form(text=cadavre)
+        return render_template("text.html",text=cadavre)
 
 
+    elif request.form['action']=='Indietro':
+        return my_form()
 
     #render_template("index.html",n="bibi")
     #return render_template(phrase)
