@@ -63,28 +63,29 @@ def interact():
 
     if request.form['action']=='Invia':
         phrase = request.form["content"]
-        if len(phrase)>1:
-            db.session.query(Phrase).filter(Phrase.num>r).update({"num": (Phrase.num+1) })
-            db.session.commit()
+        
+        # if len(phrase)>1:
+        #     db.session.query(Phrase).filter(Phrase.num>r).update({"num": (Phrase.num+1) })
+        #     db.session.commit()
 
-            #insert new phrase
-            p = Phrase(content=phrase, num=r+1)
-            db.session.add(p)
-            db.session.commit()
+        #     #insert new phrase
+        #     p = Phrase(content=phrase, num=r+1)
+        #     db.session.add(p)
+        #     db.session.commit()
 
         return render_template("thanks.html")
 
-    elif request.form['action']=='Leggi tutto':
-        print("Reading")
-        text = [p.content for p in db.session.query(Phrase).order_by(Phrase.num).all()]
-        cadavre = " ".join(text)
-        print(cadavre)
+    # elif request.form['action']=='Leggi tutto':
+    #     print("Reading")
+    #     text = [p.content for p in db.session.query(Phrase).order_by(Phrase.num).all()]
+    #     cadavre = " ".join(text)
+    #     print(cadavre)
 
-        return render_template("text.html",text=cadavre)
+    #     return render_template("text.html",text=cadavre)
 
 
-    elif request.form['action']=='Indietro':
-        return my_form()
+    # elif request.form['action']=='Indietro':
+    #     return my_form()
 
     #render_template("index.html",n="bibi")
     #return render_template(phrase)
