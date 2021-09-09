@@ -3,7 +3,7 @@
   <head>
     {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>{% block title %}{% endblock %} - Cadavre Exquis</title>
+    <title>{% block title %}{% endblock %} - Laboratorio Machine Learning</title>
 
     {% endblock %}
   </head>
@@ -11,9 +11,9 @@
   <body>
 
 
-    <img src="https://static.tvtropes.org/pmwiki/pub/images/darkandstormy_5013.jpg">
+    <!-- <img src="https://static.tvtropes.org/pmwiki/pub/images/darkandstormy_5013.jpg"> -->
     <div class="footnote">
-        Art by <a href="https://schulzmuseum.org/" target="_blank"> Charles M. Schultz </a>
+        <!-- Art by <a href="https://schulzmuseum.org/" target="_blank"> Charles M. Schultz </a> -->
     </div>
     <div id="content">{% block content %}{% endblock %}</div>
     
@@ -21,8 +21,9 @@
     <div id="text" class="testo"> {% block text %}{% endblock%}</div> 
     <div id="footer">
       {% block footer %}
-      &copy; Copyright 2020 by <a href="https://francescoturci.net/" target="_blank">Francesco Turci</a> 
-      for  <a href="https://scienceground.it" target="_blank">Scienceground</a>.
+      &copy;  <a href="https://francescoturci.net/" target="_blank">Francesco Turci</a> 
+      for
+       <a href="https://scienceground.it" target="_blank">Scienceground</a>.
       {% endblock %}
     </div>
   </body>
