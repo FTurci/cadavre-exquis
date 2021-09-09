@@ -46,29 +46,39 @@ class InputForm(Form):
         label='time interval (s)', default=18,
         validators=[validators.InputRequired()])
 @app.route('/')
-def my_form(text=None):
-    global r
-    data = Phrase.query.all()
-    num = len(data)
-
-    if num>2:
-        r = random.randint(1,num-1)
+def my_form( methods=['GET', 'POST'])
+    form = InputForm(request.form)
+    if request.method == 'POST' and form.validate():
+        result = compute(form.A.data, form.b.data,
+                         form.w.data, form.T.data)
     else:
-        r = 1
+        result = None
 
-    sel=db.session.query(Phrase).filter(Phrase.num==r).first()
-    first = sel.content
-    sel=db.session.query(Phrase).filter(Phrase.num==r+1).first()
-    second = sel.content
-    if r != 1:
-        first = "(...) "+first
-    if r+1 != num:
-        second = second+f"(...)"
+    return render_template("index.html",
+                           form=form, result=result)
+
+    # global r
+    # data = Phrase.query.all()
+    # num = len(data)
+
+    # if num>2:
+    #     r = random.randint(1,num-1)
+    # else:
+    #     r = 1
+
+    # sel=db.session.query(Phrase).filter(Phrase.num==r).first()
+    # first = sel.content
+    # sel=db.session.query(Phrase).filter(Phrase.num==r+1).first()
+    # second = sel.content
+    # if r != 1:
+    #     first = "(...) "+first
+    # if r+1 != num:
+    #     second = second+f"(...)"
     
-    if text==None:
-        return render_template("index.html",first=first, second=second)
-    else:
-        return render_template("text.html",first=first,second=second, text=text)
+    # if text==None:
+    #     return render_template("index.html",first=first, second=second)
+    # else:
+    #     return render_template("text.html",first=first,second=second, text=text)
 
 @app.route('/',methods=['POST', 'GET'])
 def interact():
