@@ -40,7 +40,7 @@ class InputForm(Form):
         label='damping factor (kg/s)', default=0,
         validators=[validators.InputRequired()])
     w = FloatField(
-        label='frequency (1/s)', default=2*pi,
+        label='frequency (1/s)', default=2,
         validators=[validators.InputRequired()])
     T = FloatField(
         label='time interval (s)', default=18,
