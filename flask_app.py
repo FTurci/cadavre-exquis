@@ -34,7 +34,7 @@ r = 1
 
 class InputForm(Form):
     Box_0_vuota = FloatField(
-        label='', default=0,
+        label='', default=5,
         validators=[validators.InputRequired()])
     Box_1_Blu = FloatField(
         label='', default=5,
