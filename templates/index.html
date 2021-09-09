@@ -31,12 +31,11 @@
 
 <form id="package_form" method="POST" action="">
 <table>
-  {% for field in form %}
-    <tr>
-    <td>{{ field.name }}</td><td>{{ field }}</td>
-    <td>{{ field.label }}</td>
-    </tr>
-  {% endfor %}
+
+    <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+    <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+     <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+      <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  <td>{{ field.name }}</td><td>{{ field }}</td> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
 </table>
 <p><input type=submit value=Compute></form></p>
 
