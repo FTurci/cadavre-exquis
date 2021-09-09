@@ -67,6 +67,10 @@ def interact():
             db.session.query(Phrase).filter(Phrase.num>r).update({"num": (Phrase.num+1) })
             db.session.commit()
 
+            if phrase.strip()[-1] in '.?!':
+                pass
+            else:
+                phrase += '.'
             #insert new phrase
             p = Phrase(content=phrase, num=r+1)
             db.session.add(p)
