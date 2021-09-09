@@ -31,11 +31,19 @@
 
 <form id="package_form" method="POST" action="">
 <table>
-
+  {for field in form}
+  {if field.name == "Box_0"%}
     <tr> <td>{{ form[0].name }}</td><td>{{ form[0] }}</td>  </tr>
-<!--     <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
-     <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
-      <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  <td>{{ field.name }}</td><td>{{ field }}</td> <td>{{ field.name }}</td><td>{{ field }}</td>  </ -->tr>
+  {elif field.name == "Box_1_Blu"%}
+    <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+  {elif field.name == "Box_2_Rosse"%}
+     <tr> <td>{{ field.name }}</td><td>{{ field }}</td> 
+ {elif field.name == "Box_2_Gialle"%}
+      <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+  <!--     <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  <td>{{ field.name }}</td><td>{{ field }}</td> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr> -->
+
+{endif}
+        {endfor}
 </table>
 <p><input type=submit value=Compute></form></p>
 
