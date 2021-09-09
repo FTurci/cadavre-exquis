@@ -33,17 +33,29 @@ r = 1
 
 
 class InputForm(Form):
-    A = FloatField(
-        label='amplitude (m)', default=1.0,
+    Box_1 = FloatField(
+        label='', default=5,
         validators=[validators.InputRequired()])
-    b = FloatField(
-        label='damping factor (kg/s)', default=0,
+    Box_2 = FloatField(
+        label='', default=5,
         validators=[validators.InputRequired()])
-    w = FloatField(
-        label='frequency (1/s)', default=2,
+    Box_3 = FloatField(
+        label='', default=5,
         validators=[validators.InputRequired()])
-    T = FloatField(
-        label='time interval (s)', default=18,
+    Box_4 = FloatField(
+        label='', default=5,
+        validators=[validators.InputRequired()])
+    Box_5 = FloatField(
+        label='', default=5,
+        validators=[validators.InputRequired()])
+    Box_6 = FloatField(
+        label='', default=5,
+        validators=[validators.InputRequired()])
+    Box_7 = FloatField(
+        label='', default=5,
+        validators=[validators.InputRequired()])
+    Box_8 = FloatField(
+        label='', default=5,
         validators=[validators.InputRequired()])
 @app.route('/')
 def my_form( methods=['GET', 'POST']):
