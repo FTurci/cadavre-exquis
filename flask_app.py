@@ -19,7 +19,7 @@ class TestForm(FlaskForm):
 @app.route('/',methods=['POST', 'GET'])
 def index():
     # level    = IntegerField('User Level', [validators.NumberRange(min=0, max=10)])
-     form = TestForm()
+    form = TestForm()
     if request.method == 'GET':
         form.number.data = 100
     if request.method == 'POST':
