@@ -16,14 +16,20 @@
   
   >
     <div class=snippet>
-          {{first}} <span class="redText"> [...] </span>{{second}} 
+          <!-- {{first}} <span class="redText"> [...] </span>{{second}}  -->
     </div>
 
 
 <form id="package_form" action="" method="POST">
-    <textarea class="form-control" name="content" placeholder="Inserisci una frase, col punto."></textarea>
-    <input type="submit" name="action" value="Leggi tutto">
-    </div> -->
+
+{% if form.number.data %}
+{{ form.number(value=form.number.data) }}
+{% else %}
+{{ form.number() }}
+{% endif %}
+    <!-- <textarea class="form-control" name="content" placeholder="Inserisci una frase, col punto."></textarea> -->
+    <!-- <input type="submit" name="action" value="Leggi tutto"> -->
+    <!-- </div> --> -->
 </form> 
 
 {% endblock %}
