@@ -46,7 +46,7 @@ class InputForm(Form):
         label='time interval (s)', default=18,
         validators=[validators.InputRequired()])
 @app.route('/')
-def my_form( methods=['GET', 'POST'])
+def my_form( methods=['GET', 'POST']):
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
         result = compute(form.A.data, form.b.data,
