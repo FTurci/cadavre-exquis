@@ -21,13 +21,25 @@
     </div>
 
 
-<form id="package_form" action="" method="POST">
+<!-- <form id="package_form" action="" method="POST">
     <textarea class="form-control" name="content" placeholder="Inserisci una frase, col punto."></textarea>
     <input type="submit"  name="action" value="Invia">
    <div>
     <input type="submit" name="action" value="Leggi tutto">
     </div>*
-</form>
+</form> -->
+
+<form method=post action="">
+<table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.name }}</td><td>{{ field }}</td>
+    <td>{{ field.label }}</td>
+    </tr>
+  {% endfor %}
+</table>
+<p><input type=submit value=Compute></form></p>
+
 
 {% endblock %}
   

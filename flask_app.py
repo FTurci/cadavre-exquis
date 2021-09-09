@@ -5,7 +5,7 @@ from flask import Flask
 from flask import Flask, request, render_template
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
-
+from wtforms import Form, FloatField, validators
 import random
 
 
@@ -31,6 +31,20 @@ class Phrase(db.Model):
 
 r = 1
 
+
+class InputForm(Form):
+    A = FloatField(
+        label='amplitude (m)', default=1.0,
+        validators=[validators.InputRequired()])
+    b = FloatField(
+        label='damping factor (kg/s)', default=0,
+        validators=[validators.InputRequired()])
+    w = FloatField(
+        label='frequency (1/s)', default=2*pi,
+        validators=[validators.InputRequired()])
+    T = FloatField(
+        label='time interval (s)', default=18,
+        validators=[validators.InputRequired()])
 @app.route('/')
 def my_form(text=None):
     global r
@@ -63,7 +77,7 @@ def interact():
 
     if request.form['action']=='Invia':
         phrase = request.form["content"]
-        
+
         # if len(phrase)>1:
         #     db.session.query(Phrase).filter(Phrase.num>r).update({"num": (Phrase.num+1) })
         #     db.session.commit()
