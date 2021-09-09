@@ -33,18 +33,18 @@
 <table>
   {% for field in form %}
   {% if field.name == "Box_0" %}
-    <tr> <td>{{ form.name }}</td><td>{{ field }}</td>  </tr>
+    <tr> <td>{{ form.name }}</td><td>{{ field }}</td> <td></td> <td></td> <td></td><td></td><td></td> </tr>
   {% elif field.name == "Box_1_Blu" %}
     <tr> <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
   {% elif field.name == "Box_2_Rosse" %}
      <tr> <td>{{ field.name }}</td><td>{{ field }}</td> 
  {% elif field.name == "Box_2_Gialle" %}
-      <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
+      <td>{{ field.name }}</td><td>{{ field }}</td>   </tr>
 
   {% elif field.name == "Box_3_Verdi" %}
      <tr> <td>{{ field.name }}</td><td>{{ field }}</td> 
   {% elif field.name == "Box_3_Azzurre" %}
-     <tr> <td>{{ field.name }}</td><td>{{ field }}</td> 
+    <td>{{ field.name }}</td><td>{{ field }}</td> 
  {% elif field.name == "Box_3_Nere" %}
       <td>{{ field.name }}</td><td>{{ field }}</td>  </tr>
 
