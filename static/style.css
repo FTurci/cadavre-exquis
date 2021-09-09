@@ -9,6 +9,23 @@ a:visited {
     font-size: 0.8em;
 }
 
+/*#maintab, #mid {
+  table-layout: fixed;
+}
+
+#maintab {
+  width: 8in;
+}
+
+#mid {
+  width: 6in;
+}*/
+
+.my_class {
+  width: 20px;
+  min-width: 10px;
+}
+
 body {
   margin: 0;
   padding: 10px;
@@ -41,6 +58,17 @@ div.istruzioni {
      font-size: 0.9em;
    /* font-family: Monaco, monospace;
     background-color: #DFB887;*/
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+     text-align: justify; 
+}
+div.risultato {
+     font-size: 1.2em;
+     color: #feffff;
+    /*font-family: Monaco, monospace;*/
+    background-color: #ff7d78;
       margin-left: 30%;
       margin-right: 30%;
       margin-top: 40px;
