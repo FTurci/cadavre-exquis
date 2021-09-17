@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
-{% block title %}Laboratorio di Machine Learning - NIM plus{% endblock %}
+{% block title %}Machine Learning Laboratory- NIM plus{% endblock %}
 {% block head %}
   {{ super() }}
 {% endblock %}
 {% block content %}
   <h1>NIM plus</h1>
   <p class="important">
-    Machine Learning come un gioco</p>
+    Playing with Machine Learning/p>
 
  <!--  <div class=istruzioni>
       <strong> Istruzioni.</strong> -->
@@ -29,72 +29,72 @@
     </div>*
 </form> -->
   <div class=istruzioni>
-      <strong> Scatole di Alice</strong>
+      <strong>Alice's boxes</strong>
     </div>
 <form id="package_form" method="POST" action="">
 <table id="maintab" align="center">
   {% for field in form %}
   {% if field.name == "Alice_Box_0_vuota" %}
     <tr align="left"> <td> Box vuota</td><td>{{ field(class_="my_class") }}    </tr>
-  {% elif field.name == "Alice_Box_1_Blu" %}
+  {% elif field.name == "Alice_Box_1_White" %}
     <tr align="left">
      <td>{{ field.label }}</td>
      <td>{{ field(class_="my_class") }}</td> 
    </tr>
-  {% elif field.name == "Alice_Box_2_Rosse" %}
+  {% elif field.name == "Alice_Box_2_Red" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-      {% elif field.name == "Alice_Box_2_Gialle" %}
+      {% elif field.name == "Alice_Box_2_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td>  
     </tr>
-  {% elif field.name == "Alice_Box_3_Verdi" %}
+  {% elif field.name == "Alice_Box_3_Green" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_3_Azzurre" %}
+  {% elif field.name == "Alice_Box_3_Cyan" %}
     <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Alice_Box_3_Nere" %}
+ {% elif field.name == "Alice_Box_3_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td>  
     </tr>
-  {% elif field.name == "Alice_Box_4_Blu" %}
+  {% elif field.name == "Alice_Box_4_White" %}
      <tr align="left"> 
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_4_Rosse" %}
+  {% elif field.name == "Alice_Box_4_Red" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Alice_Box_4_Gialle" %}
+ {% elif field.name == "Alice_Box_4_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
 
     </tr>
-  {% elif field.name == "Alice_Box_5_Verdi" %}
+  {% elif field.name == "Alice_Box_5_Green" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_5_Azzurre" %}
+  {% elif field.name == "Alice_Box_5_Cyan" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Alice_Box_5_Nere" %}
+ {% elif field.name == "Alice_Box_5_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_5_Blu" %}
+  {% elif field.name == "Alice_Box_5_White" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
-{% elif field.name == "Alice_Box_6_Rosse" %}
+{% elif field.name == "Alice_Box_6_Red" %}
 <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_6_Gialle" %}
+  {% elif field.name == "Alice_Box_6_Yellow" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Alice_Box_6_Verdi" %}
+ {% elif field.name == "Alice_Box_6_Green" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_6_Azzurre" %}
+  {% elif field.name == "Alice_Box_6_Cyan" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-   {% elif field.name == "Alice_Box_6_Nere" %}
+   {% elif field.name == "Alice_Box_6_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
-{% elif field.name == "Alice_Box_7_Blu" %}
+{% elif field.name == "Alice_Box_7_White" %}
 <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_7_Rosse" %}
+  {% elif field.name == "Alice_Box_7_Red" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Alice_Box_7_Gialle" %}
+ {% elif field.name == "Alice_Box_7_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Alice_Box_7_Verdi" %}
+  {% elif field.name == "Alice_Box_7_Green" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-   {% elif field.name == "Alice_Box_7_Azzurre" %}
+   {% elif field.name == "Alice_Box_7_Cyan" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-      {% elif field.name == "Alice_Box_7_Nere" %}
+      {% elif field.name == "Alice_Box_7_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
@@ -103,72 +103,72 @@
 </table>
 
  <div class=istruzioni>
-      <strong> Scatole di Bob</strong>
+      <strong>Bob's boxes</strong>
     </div>
 
     <table id="maintab" align="center">
   {% for field in form %}
   {% if field.name == "Bob_Box_0_vuota" %}
     <tr align="left"> <td> Box vuota</td><td>{{ field(class_="my_class") }}    </tr>
-  {% elif field.name == "Bob_Box_1_Blu" %}
+  {% elif field.name == "Bob_Box_1_White" %}
     <tr align="left">
      <td>{{ field.label }}</td>
      <td>{{ field(class_="my_class") }}</td> 
    </tr>
-  {% elif field.name == "Bob_Box_2_Rosse" %}
+  {% elif field.name == "Bob_Box_2_Red" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-      {% elif field.name == "Bob_Box_2_Gialle" %}
+      {% elif field.name == "Bob_Box_2_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td>  
     </tr>
-  {% elif field.name == "Bob_Box_3_Verdi" %}
+  {% elif field.name == "Bob_Box_3_Green" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_3_Azzurre" %}
+  {% elif field.name == "Bob_Box_3_Cyan" %}
     <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Bob_Box_3_Nere" %}
+ {% elif field.name == "Bob_Box_3_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td>  
     </tr>
-  {% elif field.name == "Bob_Box_4_Blu" %}
+  {% elif field.name == "Bob_Box_4_White" %}
      <tr align="left"> 
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_4_Rosse" %}
+  {% elif field.name == "Bob_Box_4_Red" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Bob_Box_4_Gialle" %}
+ {% elif field.name == "Bob_Box_4_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
 
     </tr>
-  {% elif field.name == "Bob_Box_5_Verdi" %}
+  {% elif field.name == "Bob_Box_5_Green" %}
      <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_5_Azzurre" %}
+  {% elif field.name == "Bob_Box_5_Cyan" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Bob_Box_5_Nere" %}
+ {% elif field.name == "Bob_Box_5_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_5_Blu" %}
+  {% elif field.name == "Bob_Box_5_White" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
-{% elif field.name == "Bob_Box_6_Rosse" %}
+{% elif field.name == "Bob_Box_6_Red" %}
 <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_6_Gialle" %}
+  {% elif field.name == "Bob_Box_6_Yellow" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Bob_Box_6_Verdi" %}
+ {% elif field.name == "Bob_Box_6_Green" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_6_Azzurre" %}
+  {% elif field.name == "Bob_Box_6_Cyan" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-   {% elif field.name == "Bob_Box_6_Nere" %}
+   {% elif field.name == "Bob_Box_6_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
-{% elif field.name == "Bob_Box_7_Blu" %}
+{% elif field.name == "Bob_Box_7_White" %}
 <tr align="left"> <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_7_Rosse" %}
+  {% elif field.name == "Bob_Box_7_Red" %}
      <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
- {% elif field.name == "Bob_Box_7_Gialle" %}
+ {% elif field.name == "Bob_Box_7_Yellow" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-  {% elif field.name == "Bob_Box_7_Verdi" %}
+  {% elif field.name == "Bob_Box_7_Green" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-   {% elif field.name == "Bob_Box_7_Azzurre" %}
+   {% elif field.name == "Bob_Box_7_Cyan" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
-      {% elif field.name == "Bob_Box_7_Nere" %}
+      {% elif field.name == "Bob_Box_7_Black" %}
       <td>{{ field.label }}</td><td>{{ field(class_="my_class") }}</td> 
     </tr>
 
