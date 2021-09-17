@@ -33,7 +33,7 @@ r = 1
 
 
 class InputForm(Form):
-    Alice_Box_0_vuota = IntegerField(
+    Alice_Box_0_Empty = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
     Alice_Box_1_Blu = IntegerField(
@@ -112,7 +112,7 @@ class InputForm(Form):
 
 
     #  Bob's boxes
-    Bob_Box_0_vuota = IntegerField(
+    Bob_Box_0_Empty = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
     Bob_Box_1_Blu = IntegerField(
