@@ -1,20 +1,19 @@
 {% extends "layout.html" %}
-{% block title %}Laboratorio di Machine Learning - NIM plus{% endblock %}
+{% block title %} Machine Learning Laboratory - NIM plus{% endblock %}
 {% block head %}
   {{ super() }}
 {% endblock %}
 {% block content %}
   <h1>NIM plus</h1>
-  <p class="important">
-    Machine Learning come un gioco</p>
+  <p class="important">    Machine Learning come un gioco </p>
 
   <div class=risultato>
       <p>
-      <strong> Alice vince il {{ result_alice}} % delle volte</strong>
+      <strong> Alice wins {{ result_alice}}% of the times.</strong>
        </p>
 
        <p>
-      <strong> Bob vince il {{ result_bob}} % delle volte</strong>
+      <strong> Bob wins {{ result_bob}}% of the times.</strong>
     </p>
   </div>
 
@@ -32,7 +31,7 @@
     </div>*
 </form> -->
   <div class=istruzioni>
-      <strong> Scatole di Alice</strong>
+      <strong>Alice's boxes</strong>
     </div>
 <form id="package_form" method="POST" action="">
 <table id="maintab" align="center">
@@ -106,7 +105,7 @@
 </table>
 
  <div class=istruzioni>
-      <strong> Scatole di Bob</strong>
+      <strong>Bob's boxes</strong>
     </div>
 
     <table id="maintab" align="center">
