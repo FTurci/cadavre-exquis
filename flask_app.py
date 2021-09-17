@@ -36,8 +36,8 @@ class InputForm(Form):
     Alice_Box_0_Empty = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
-    Alice_Box_1_Blu = IntegerField(
-        label='Box 1: Blu', default=5,
+    Alice_Box_1_White = IntegerField(
+        label='Box 1: White', default=5,
         validators=[validators.InputRequired()])
     Alice_Box_2_Rosse = IntegerField(
         label='Box 2: Rosse', default=5,
@@ -54,8 +54,8 @@ class InputForm(Form):
     Alice_Box_3_Nere = IntegerField(
         label='Box 3: Nere', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_4_Blu = IntegerField(
-        label='Box 4: Blu', default=5,
+    Alice_Box_4_White = IntegerField(
+        label='Box 4: White', default=5,
         validators=[validators.InputRequired()])
     Alice_Box_4_Rosse = IntegerField(
         label='Box 4: Rosse', default=5,
@@ -72,8 +72,8 @@ class InputForm(Form):
     Alice_Box_5_Nere = IntegerField(
         label='Box 5: Nere', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_5_Blu = IntegerField(
-        label='Box 5: Blu', default=5,
+    Alice_Box_5_White = IntegerField(
+        label='Box 5: White', default=5,
         validators=[validators.InputRequired()])
     Alice_Box_6_Rosse = IntegerField(
         label='Box 6: Rosse', default=5,
@@ -91,8 +91,8 @@ class InputForm(Form):
         label='Box 6: Nere', default=5,
         validators=[validators.InputRequired()])
 
-    Alice_Box_7_Blu = IntegerField(
-        label='Box 7: Blu', default=5,
+    Alice_Box_7_White = IntegerField(
+        label='Box 7: White', default=5,
         validators=[validators.InputRequired()])
     Alice_Box_7_Rosse = IntegerField(
         label='Box 7: Rosse', default=5,
@@ -115,8 +115,8 @@ class InputForm(Form):
     Bob_Box_0_Empty = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
-    Bob_Box_1_Blu = IntegerField(
-        label='Box 1: Blu', default=5,
+    Bob_Box_1_White = IntegerField(
+        label='Box 1: White', default=5,
         validators=[validators.InputRequired()])
     Bob_Box_2_Rosse = IntegerField(
         label='Box 2: Rosse', default=5,
@@ -133,8 +133,8 @@ class InputForm(Form):
     Bob_Box_3_Nere = IntegerField(
         label='Box 3: Nere', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_4_Blu = IntegerField(
-        label='Box 4: Blu', default=5,
+    Bob_Box_4_White = IntegerField(
+        label='Box 4: White', default=5,
         validators=[validators.InputRequired()])
     Bob_Box_4_Rosse = IntegerField(
         label='Box 4: Rosse', default=5,
@@ -151,8 +151,8 @@ class InputForm(Form):
     Bob_Box_5_Nere = IntegerField(
         label='Box 5: Nere', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_5_Blu = IntegerField(
-        label='Box 5: Blu', default=5,
+    Bob_Box_5_White = IntegerField(
+        label='Box 5: White', default=5,
         validators=[validators.InputRequired()])
     Bob_Box_6_Rosse = IntegerField(
         label='Box 6: Rosse', default=5,
@@ -170,8 +170,8 @@ class InputForm(Form):
         label='Box 6: Nere', default=5,
         validators=[validators.InputRequired()])
 
-    Bob_Box_7_Blu = IntegerField(
-        label='Box 7: Blu', default=5,
+    Bob_Box_7_White = IntegerField(
+        label='Box 7: White', default=5,
         validators=[validators.InputRequired()])
     Bob_Box_7_Rosse = IntegerField(
         label='Box 7: Rosse', default=5,
@@ -196,8 +196,8 @@ def interact():
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
 
-        print("requesting", form.Alice_Box_1_Blu.data, type(form.Alice_Box_1_Blu.data) )
-        # print(dir(form.Alice_Box_1_Blu))
+        print("requesting", form.Alice_Box_1_White.data, type(form.Alice_Box_1_White.data) )
+        # print(dir(form.Alice_Box_1_White))
         from nimplus import Player, State, Game
 
         '''For level 3, fast Nim+ game, input Alice's and Bob's boxes content then plays 1 million matches with random starter to decide who is the winner.'''
@@ -214,25 +214,25 @@ def interact():
                 keys.append((fromstate, tostate))
         print(len(keys))
 
-        alice.boxes[keys[0]] = form.Alice_Box_1_Blu.data
+        alice.boxes[keys[0]] = form.Alice_Box_1_White.data
         alice.boxes[keys[1]] = form.Alice_Box_2_Rosse.data
         alice.boxes[keys[2]] = form.Alice_Box_2_Gialle.data
         alice.boxes[keys[3]] = form.Alice_Box_3_Verdi.data
         alice.boxes[keys[4]] = form.Alice_Box_3_Azzurre.data
         alice.boxes[keys[5]] = form.Alice_Box_3_Nere.data
-        alice.boxes[keys[6]] = form.Alice_Box_4_Blu.data
+        alice.boxes[keys[6]] = form.Alice_Box_4_White.data
         alice.boxes[keys[7]] = form.Alice_Box_4_Rosse.data
         alice.boxes[keys[8]] = form.Alice_Box_4_Gialle.data
         alice.boxes[keys[9]] = form.Alice_Box_5_Verdi.data
         alice.boxes[keys[10]] = form.Alice_Box_5_Azzurre.data
         alice.boxes[keys[11]] = form.Alice_Box_5_Nere.data
-        alice.boxes[keys[12]] = form.Alice_Box_5_Blu.data
+        alice.boxes[keys[12]] = form.Alice_Box_5_White.data
         alice.boxes[keys[13]] = form.Alice_Box_6_Rosse.data
         alice.boxes[keys[14]] = form.Alice_Box_6_Gialle.data
         alice.boxes[keys[15]] = form.Alice_Box_6_Verdi.data
         alice.boxes[keys[16]] = form.Alice_Box_6_Azzurre.data
         alice.boxes[keys[17]] = form.Alice_Box_6_Nere.data
-        alice.boxes[keys[18]] = form.Alice_Box_7_Blu.data
+        alice.boxes[keys[18]] = form.Alice_Box_7_White.data
         alice.boxes[keys[19]] = form.Alice_Box_7_Rosse.data
         alice.boxes[keys[20]] = form.Alice_Box_7_Gialle.data
         alice.boxes[keys[21]] = form.Alice_Box_7_Verdi.data
@@ -240,25 +240,25 @@ def interact():
         alice.boxes[keys[23]] = form.Alice_Box_7_Nere.data
 
 
-        bob.boxes[keys[0]] = form.Bob_Box_1_Blu.data
+        bob.boxes[keys[0]] = form.Bob_Box_1_White.data
         bob.boxes[keys[1]] = form.Bob_Box_2_Rosse.data
         bob.boxes[keys[2]] = form.Bob_Box_2_Gialle.data
         bob.boxes[keys[3]] = form.Bob_Box_3_Verdi.data
         bob.boxes[keys[4]] = form.Bob_Box_3_Azzurre.data
         bob.boxes[keys[5]] = form.Bob_Box_3_Nere.data
-        bob.boxes[keys[6]] = form.Bob_Box_4_Blu.data
+        bob.boxes[keys[6]] = form.Bob_Box_4_White.data
         bob.boxes[keys[7]] = form.Bob_Box_4_Rosse.data
         bob.boxes[keys[8]] = form.Bob_Box_4_Gialle.data
         bob.boxes[keys[9]] = form.Bob_Box_5_Verdi.data
         bob.boxes[keys[10]] = form.Bob_Box_5_Azzurre.data
         bob.boxes[keys[11]] = form.Bob_Box_5_Nere.data
-        bob.boxes[keys[12]] = form.Bob_Box_5_Blu.data
+        bob.boxes[keys[12]] = form.Bob_Box_5_White.data
         bob.boxes[keys[13]] = form.Bob_Box_6_Rosse.data
         bob.boxes[keys[14]] = form.Bob_Box_6_Gialle.data
         bob.boxes[keys[15]] = form.Bob_Box_6_Verdi.data
         bob.boxes[keys[16]] = form.Bob_Box_6_Azzurre.data
         bob.boxes[keys[17]] = form.Bob_Box_6_Nere.data
-        bob.boxes[keys[18]] = form.Bob_Box_7_Blu.data
+        bob.boxes[keys[18]] = form.Bob_Box_7_White.data
         bob.boxes[keys[19]] = form.Bob_Box_7_Rosse.data
         bob.boxes[keys[20]] = form.Bob_Box_7_Gialle.data
         bob.boxes[keys[21]] = form.Bob_Box_7_Verdi.data
