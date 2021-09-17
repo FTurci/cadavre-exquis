@@ -33,160 +33,160 @@ r = 1
 
 
 class InputForm(Form):
-    Alice_Box_0_empty = IntegerField(
+    Alice_Box_0_vuota = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
-    Alice_Box_1_White = IntegerField(
-        label='Box 1: White', default=5,
+    Alice_Box_1_Blu = IntegerField(
+        label='Box 1: Blu', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_2_Red = IntegerField(
-        label='Box 2: Red', default=5,
+    Alice_Box_2_Rosse = IntegerField(
+        label='Box 2: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_2_Yellow = IntegerField(
-        label='Box 2: Yellow', default=5,
+    Alice_Box_2_Gialle = IntegerField(
+        label='Box 2: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_3_Green = IntegerField(
-        label='Box 3: Green', default=5,
+    Alice_Box_3_Verdi = IntegerField(
+        label='Box 3: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_3_Cyan = IntegerField(
-        label='Box 3: Cyan', default=5,
+    Alice_Box_3_Azzurre = IntegerField(
+        label='Box 3: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_3_Black = IntegerField(
-        label='Box 3: Black', default=5,
+    Alice_Box_3_Nere = IntegerField(
+        label='Box 3: Nere', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_4_White = IntegerField(
-        label='Box 4: White', default=5,
+    Alice_Box_4_Blu = IntegerField(
+        label='Box 4: Blu', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_4_Red = IntegerField(
-        label='Box 4: Red', default=5,
+    Alice_Box_4_Rosse = IntegerField(
+        label='Box 4: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_4_Yellow = IntegerField(
-        label='Box 4: Yellow', default=5,
+    Alice_Box_4_Gialle = IntegerField(
+        label='Box 4: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_5_Green = IntegerField(
-        label='Box 5: Green', default=5,
+    Alice_Box_5_Verdi = IntegerField(
+        label='Box 5: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_5_Cyan = IntegerField(
-        label='Box 5: Cyan', default=5,
+    Alice_Box_5_Azzurre = IntegerField(
+        label='Box 5: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_5_Black = IntegerField(
-        label='Box 5: Black', default=5,
+    Alice_Box_5_Nere = IntegerField(
+        label='Box 5: Nere', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_5_White = IntegerField(
-        label='Box 5: White', default=5,
+    Alice_Box_5_Blu = IntegerField(
+        label='Box 5: Blu', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_6_Red = IntegerField(
-        label='Box 6: Red', default=5,
+    Alice_Box_6_Rosse = IntegerField(
+        label='Box 6: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_6_Yellow = IntegerField(
-        label='Box 6: Yellow', default=5,
+    Alice_Box_6_Gialle = IntegerField(
+        label='Box 6: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_6_Green = IntegerField(
-        label='Box 6: Green', default=5,
+    Alice_Box_6_Verdi = IntegerField(
+        label='Box 6: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_6_Cyan = IntegerField(
-        label='Box 6: Cyan', default=5,
+    Alice_Box_6_Azzurre = IntegerField(
+        label='Box 6: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_6_Black = IntegerField(
-        label='Box 6: Black', default=5,
+    Alice_Box_6_Nere = IntegerField(
+        label='Box 6: Nere', default=5,
         validators=[validators.InputRequired()])
 
-    Alice_Box_7_White = IntegerField(
-        label='Box 7: White', default=5,
+    Alice_Box_7_Blu = IntegerField(
+        label='Box 7: Blu', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_7_Red = IntegerField(
-        label='Box 7: Red', default=5,
+    Alice_Box_7_Rosse = IntegerField(
+        label='Box 7: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_7_Yellow = IntegerField(
-        label='Box 7: Yellow', default=5,
+    Alice_Box_7_Gialle = IntegerField(
+        label='Box 7: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_7_Green = IntegerField(
-        label='Box 7: Green', default=5,
+    Alice_Box_7_Verdi = IntegerField(
+        label='Box 7: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_7_Cyan = IntegerField(
-        label='Box 7: Cyan', default=5,
+    Alice_Box_7_Azzurre = IntegerField(
+        label='Box 7: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Alice_Box_7_Black = IntegerField(
-        label='Box 7: Black', default=5,
+    Alice_Box_7_Nere = IntegerField(
+        label='Box 7: Nere', default=5,
         validators=[validators.InputRequired()])
 
 
     #  Bob's boxes
-    Bob_Box_0_empty = IntegerField(
+    Bob_Box_0_vuota = IntegerField(
         label='', default=0,
         validators=[validators.InputRequired()])
-    Bob_Box_1_White = IntegerField(
-        label='Box 1: White', default=5,
+    Bob_Box_1_Blu = IntegerField(
+        label='Box 1: Blu', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_2_Red = IntegerField(
-        label='Box 2: Red', default=5,
+    Bob_Box_2_Rosse = IntegerField(
+        label='Box 2: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_2_Yellow = IntegerField(
-        label='Box 2: Yellow', default=5,
+    Bob_Box_2_Gialle = IntegerField(
+        label='Box 2: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_3_Green = IntegerField(
-        label='Box 3: Green', default=5,
+    Bob_Box_3_Verdi = IntegerField(
+        label='Box 3: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_3_Cyan = IntegerField(
-        label='Box 3: Cyan', default=5,
+    Bob_Box_3_Azzurre = IntegerField(
+        label='Box 3: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_3_Black = IntegerField(
-        label='Box 3: Black', default=5,
+    Bob_Box_3_Nere = IntegerField(
+        label='Box 3: Nere', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_4_White = IntegerField(
-        label='Box 4: White', default=5,
+    Bob_Box_4_Blu = IntegerField(
+        label='Box 4: Blu', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_4_Red = IntegerField(
-        label='Box 4: Red', default=5,
+    Bob_Box_4_Rosse = IntegerField(
+        label='Box 4: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_4_Yellow = IntegerField(
-        label='Box 4: Yellow', default=5,
+    Bob_Box_4_Gialle = IntegerField(
+        label='Box 4: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_5_Green = IntegerField(
-        label='Box 5: Green', default=5,
+    Bob_Box_5_Verdi = IntegerField(
+        label='Box 5: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_5_Cyan = IntegerField(
-        label='Box 5: Cyan', default=5,
+    Bob_Box_5_Azzurre = IntegerField(
+        label='Box 5: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_5_Black = IntegerField(
-        label='Box 5: Black', default=5,
+    Bob_Box_5_Nere = IntegerField(
+        label='Box 5: Nere', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_5_White = IntegerField(
-        label='Box 5: White', default=5,
+    Bob_Box_5_Blu = IntegerField(
+        label='Box 5: Blu', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_6_Red = IntegerField(
-        label='Box 6: Red', default=5,
+    Bob_Box_6_Rosse = IntegerField(
+        label='Box 6: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_6_Yellow = IntegerField(
-        label='Box 6: Yellow', default=5,
+    Bob_Box_6_Gialle = IntegerField(
+        label='Box 6: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_6_Green = IntegerField(
-        label='Box 6: Green', default=5,
+    Bob_Box_6_Verdi = IntegerField(
+        label='Box 6: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_6_Cyan = IntegerField(
-        label='Box 6: Cyan', default=5,
+    Bob_Box_6_Azzurre = IntegerField(
+        label='Box 6: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_6_Black = IntegerField(
-        label='Box 6: Black', default=5,
+    Bob_Box_6_Nere = IntegerField(
+        label='Box 6: Nere', default=5,
         validators=[validators.InputRequired()])
 
-    Bob_Box_7_White = IntegerField(
-        label='Box 7: White', default=5,
+    Bob_Box_7_Blu = IntegerField(
+        label='Box 7: Blu', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_7_Red = IntegerField(
-        label='Box 7: Red', default=5,
+    Bob_Box_7_Rosse = IntegerField(
+        label='Box 7: Rosse', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_7_Yellow = IntegerField(
-        label='Box 7: Yellow', default=5,
+    Bob_Box_7_Gialle = IntegerField(
+        label='Box 7: Gialle', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_7_Green = IntegerField(
-        label='Box 7: Green', default=5,
+    Bob_Box_7_Verdi = IntegerField(
+        label='Box 7: Verdi', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_7_Cyan = IntegerField(
-        label='Box 7: Cyan', default=5,
+    Bob_Box_7_Azzurre = IntegerField(
+        label='Box 7: Azzurre', default=5,
         validators=[validators.InputRequired()])
-    Bob_Box_7_Black = IntegerField(
-        label='Box 7: Black', default=5,
+    Bob_Box_7_Nere = IntegerField(
+        label='Box 7: Nere', default=5,
         validators=[validators.InputRequired()])
 
 
@@ -196,8 +196,8 @@ def interact():
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
 
-        print("requesting", form.Alice_Box_1_White.data, type(form.Alice_Box_1_White.data) )
-        # print(dir(form.Alice_Box_1_White))
+        print("requesting", form.Alice_Box_1_Blu.data, type(form.Alice_Box_1_Blu.data) )
+        # print(dir(form.Alice_Box_1_Blu))
         from nimplus import Player, State, Game
 
         '''For level 3, fast Nim+ game, input Alice's and Bob's boxes content then plays 1 million matches with random starter to decide who is the winner.'''
@@ -214,56 +214,56 @@ def interact():
                 keys.append((fromstate, tostate))
         print(len(keys))
 
-        alice.boxes[keys[0]] = form.Alice_Box_1_White.data
-        alice.boxes[keys[1]] = form.Alice_Box_2_Red.data
-        alice.boxes[keys[2]] = form.Alice_Box_2_Yellow.data
-        alice.boxes[keys[3]] = form.Alice_Box_3_Green.data
-        alice.boxes[keys[4]] = form.Alice_Box_3_Cyan.data
-        alice.boxes[keys[5]] = form.Alice_Box_3_Black.data
-        alice.boxes[keys[6]] = form.Alice_Box_4_White.data
-        alice.boxes[keys[7]] = form.Alice_Box_4_Red.data
-        alice.boxes[keys[8]] = form.Alice_Box_4_Yellow.data
-        alice.boxes[keys[9]] = form.Alice_Box_5_Green.data
-        alice.boxes[keys[10]] = form.Alice_Box_5_Cyan.data
-        alice.boxes[keys[11]] = form.Alice_Box_5_Black.data
-        alice.boxes[keys[12]] = form.Alice_Box_5_White.data
-        alice.boxes[keys[13]] = form.Alice_Box_6_Red.data
-        alice.boxes[keys[14]] = form.Alice_Box_6_Yellow.data
-        alice.boxes[keys[15]] = form.Alice_Box_6_Green.data
-        alice.boxes[keys[16]] = form.Alice_Box_6_Cyan.data
-        alice.boxes[keys[17]] = form.Alice_Box_6_Black.data
-        alice.boxes[keys[18]] = form.Alice_Box_7_White.data
-        alice.boxes[keys[19]] = form.Alice_Box_7_Red.data
-        alice.boxes[keys[20]] = form.Alice_Box_7_Yellow.data
-        alice.boxes[keys[21]] = form.Alice_Box_7_Green.data
-        alice.boxes[keys[22]] = form.Alice_Box_7_Cyan.data
-        alice.boxes[keys[23]] = form.Alice_Box_7_Black.data
+        alice.boxes[keys[0]] = form.Alice_Box_1_Blu.data
+        alice.boxes[keys[1]] = form.Alice_Box_2_Rosse.data
+        alice.boxes[keys[2]] = form.Alice_Box_2_Gialle.data
+        alice.boxes[keys[3]] = form.Alice_Box_3_Verdi.data
+        alice.boxes[keys[4]] = form.Alice_Box_3_Azzurre.data
+        alice.boxes[keys[5]] = form.Alice_Box_3_Nere.data
+        alice.boxes[keys[6]] = form.Alice_Box_4_Blu.data
+        alice.boxes[keys[7]] = form.Alice_Box_4_Rosse.data
+        alice.boxes[keys[8]] = form.Alice_Box_4_Gialle.data
+        alice.boxes[keys[9]] = form.Alice_Box_5_Verdi.data
+        alice.boxes[keys[10]] = form.Alice_Box_5_Azzurre.data
+        alice.boxes[keys[11]] = form.Alice_Box_5_Nere.data
+        alice.boxes[keys[12]] = form.Alice_Box_5_Blu.data
+        alice.boxes[keys[13]] = form.Alice_Box_6_Rosse.data
+        alice.boxes[keys[14]] = form.Alice_Box_6_Gialle.data
+        alice.boxes[keys[15]] = form.Alice_Box_6_Verdi.data
+        alice.boxes[keys[16]] = form.Alice_Box_6_Azzurre.data
+        alice.boxes[keys[17]] = form.Alice_Box_6_Nere.data
+        alice.boxes[keys[18]] = form.Alice_Box_7_Blu.data
+        alice.boxes[keys[19]] = form.Alice_Box_7_Rosse.data
+        alice.boxes[keys[20]] = form.Alice_Box_7_Gialle.data
+        alice.boxes[keys[21]] = form.Alice_Box_7_Verdi.data
+        alice.boxes[keys[22]] = form.Alice_Box_7_Azzurre.data
+        alice.boxes[keys[23]] = form.Alice_Box_7_Nere.data
 
 
-        bob.boxes[keys[0]] = form.Bob_Box_1_White.data
-        bob.boxes[keys[1]] = form.Bob_Box_2_Red.data
-        bob.boxes[keys[2]] = form.Bob_Box_2_Yellow.data
-        bob.boxes[keys[3]] = form.Bob_Box_3_Green.data
-        bob.boxes[keys[4]] = form.Bob_Box_3_Cyan.data
-        bob.boxes[keys[5]] = form.Bob_Box_3_Black.data
-        bob.boxes[keys[6]] = form.Bob_Box_4_White.data
-        bob.boxes[keys[7]] = form.Bob_Box_4_Red.data
-        bob.boxes[keys[8]] = form.Bob_Box_4_Yellow.data
-        bob.boxes[keys[9]] = form.Bob_Box_5_Green.data
-        bob.boxes[keys[10]] = form.Bob_Box_5_Cyan.data
-        bob.boxes[keys[11]] = form.Bob_Box_5_Black.data
-        bob.boxes[keys[12]] = form.Bob_Box_5_White.data
-        bob.boxes[keys[13]] = form.Bob_Box_6_Red.data
-        bob.boxes[keys[14]] = form.Bob_Box_6_Yellow.data
-        bob.boxes[keys[15]] = form.Bob_Box_6_Green.data
-        bob.boxes[keys[16]] = form.Bob_Box_6_Cyan.data
-        bob.boxes[keys[17]] = form.Bob_Box_6_Black.data
-        bob.boxes[keys[18]] = form.Bob_Box_7_White.data
-        bob.boxes[keys[19]] = form.Bob_Box_7_Red.data
-        bob.boxes[keys[20]] = form.Bob_Box_7_Yellow.data
-        bob.boxes[keys[21]] = form.Bob_Box_7_Green.data
-        bob.boxes[keys[22]] = form.Bob_Box_7_Cyan.data
-        bob.boxes[keys[23]] = form.Bob_Box_7_Black.data
+        bob.boxes[keys[0]] = form.Bob_Box_1_Blu.data
+        bob.boxes[keys[1]] = form.Bob_Box_2_Rosse.data
+        bob.boxes[keys[2]] = form.Bob_Box_2_Gialle.data
+        bob.boxes[keys[3]] = form.Bob_Box_3_Verdi.data
+        bob.boxes[keys[4]] = form.Bob_Box_3_Azzurre.data
+        bob.boxes[keys[5]] = form.Bob_Box_3_Nere.data
+        bob.boxes[keys[6]] = form.Bob_Box_4_Blu.data
+        bob.boxes[keys[7]] = form.Bob_Box_4_Rosse.data
+        bob.boxes[keys[8]] = form.Bob_Box_4_Gialle.data
+        bob.boxes[keys[9]] = form.Bob_Box_5_Verdi.data
+        bob.boxes[keys[10]] = form.Bob_Box_5_Azzurre.data
+        bob.boxes[keys[11]] = form.Bob_Box_5_Nere.data
+        bob.boxes[keys[12]] = form.Bob_Box_5_Blu.data
+        bob.boxes[keys[13]] = form.Bob_Box_6_Rosse.data
+        bob.boxes[keys[14]] = form.Bob_Box_6_Gialle.data
+        bob.boxes[keys[15]] = form.Bob_Box_6_Verdi.data
+        bob.boxes[keys[16]] = form.Bob_Box_6_Azzurre.data
+        bob.boxes[keys[17]] = form.Bob_Box_6_Nere.data
+        bob.boxes[keys[18]] = form.Bob_Box_7_Blu.data
+        bob.boxes[keys[19]] = form.Bob_Box_7_Rosse.data
+        bob.boxes[keys[20]] = form.Bob_Box_7_Gialle.data
+        bob.boxes[keys[21]] = form.Bob_Box_7_Verdi.data
+        bob.boxes[keys[22]] = form.Bob_Box_7_Azzurre.data
+        bob.boxes[keys[23]] = form.Bob_Box_7_Nere.data
         
         print(alice.boxes)
 
