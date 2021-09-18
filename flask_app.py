@@ -194,8 +194,8 @@ class InputForm(Form):
 @app.route('/',methods=['POST', 'GET'])
 def interact():
     form = InputForm(request.form)
+    
     if request.method == 'POST' and form.validate():
-
         print("requesting", form.Alice_Box_1_White.data, type(form.Alice_Box_1_White.data) )
         # print(dir(form.Alice_Box_1_White))
         from nimplus import Player, State, Game

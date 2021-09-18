@@ -30,11 +30,13 @@
   <div class=istruzioni>
       <strong>Alice's boxes</strong>
     </div>
+
+
 <form id="package_form" method="POST" action="">
 <table id="maintab" align="center">
   {% for field in form %}
-  {% if field.name == "Alice_Box_0_vuota" %}
-    <tr align="left"> <td> Box vuota</td><td>{{ field(class_="my_class") }}    </tr>
+  {% if field.name == "Alice_Box_0_Empty" %}
+    <tr align="left"> <td> Box 0: Empty</td><td>{{ field(class_="my_class") }}    </tr>
   {% elif field.name == "Alice_Box_1_White" %}
     <tr align="left">
      <td>{{ field.label }}</td>
@@ -107,8 +109,8 @@
 
     <table id="maintab" align="center">
   {% for field in form %}
-  {% if field.name == "Bob_Box_0_vuota" %}
-    <tr align="left"> <td> Box vuota</td><td>{{ field(class_="my_class") }}    </tr>
+  {% if field.name == "Bob_Box_0_Empty" %}
+    <tr align="left"> <td> Box 0: Empty</td><td>{{ field(class_="my_class") }}    </tr>
   {% elif field.name == "Bob_Box_1_White" %}
     <tr align="left">
      <td>{{ field.label }}</td>
@@ -176,7 +178,7 @@
 </table>
 
 
-<p><input type=submit value=Calcola></form></p>
+<p><input type=submit value=Compute></form></p>
 
 
 {% endblock %}
